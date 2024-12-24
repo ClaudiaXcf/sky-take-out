@@ -8,4 +8,12 @@
             (null,#{fl.dishId},#{fl.name},#{fl.value})
         </foreach>
     </insert>
+
+    <!--根据菜品id删除口味-->
+    <delete id="deleteFlavorByDishId">
+        delete from dish_flavor where dish_id in
+        <foreach collection="ids" item="id" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
 </mapper>

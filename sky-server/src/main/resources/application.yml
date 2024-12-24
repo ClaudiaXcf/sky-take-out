@@ -45,3 +45,10 @@ ali:
     access-key-id: LTAI5t63qzsyznNYLZRpTYHR
     access-key-secret: NPNdwY5guTbcBZv0nDVXPtVBi3gbx8
     bucket-name: sky-takeout996
+---
+#设置redis
+spring:
+  redis:
+    host: ${sky.redis.host}
+    port: ${sky.redis.port}
+    password: ${sky.redis.password}

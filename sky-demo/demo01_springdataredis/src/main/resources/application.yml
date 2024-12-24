@@ -1,0 +1,5 @@
+spring:
+  redis:
+    host: redis-17802.c44.us-east-1-2.ec2.redns.redis-cloud.com
+    port: 17802
+    password: df0nZvW6JXAHgcxkf9Vr3GDh8yvyQor8
